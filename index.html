@@ -10,59 +10,83 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <h3>Dashboard</h3>
-        <nav>
-            <a title="home">Home</a>
-            <a title="profile">Profile</a>
-            <a title="messages">Messages</a>
-            <a title="history">History</a>
-            <a title="tasks">Tasks</a>
-            <a title="communities">Communities</a>
-            <a title="settings">Settings</a>
-            <a title="support">Support</a>
-            <a title="privacy">Privacy</a>
-        </nav>
-    </div>
-    <div class="header">
-        <form action="/" method="GET" class="form">
-            <input type="search" placeholder="Search" class="search-field" />
-            <button type="submit" class="search-button"><img
-                    src="https://www.kindacode.com/wp-content/uploads/2020/12/search.png"></button>
-        </form>
-        <div id="controls">
-            <svg id="moon" viewBox="-6 -6 12 12">
-                <title>Dark mode</title>
-                <defs>
-                    <mask id="earth">
-                        <rect fill="white" x="-5" y="-5" width="10" height="10"></rect>
-                        <circle fill="black" cx="3.141592654" r="5" />
-                    </mask>
-                </defs>
-                <circle r="5" fill="currentColor" mask="url(#earth)" transform="rotate(-23.5)" />
-            </svg>
+    <div class="wrapper">
 
-            <span class="hex-icon-sun">
-                <svg>
-                    <path
-                        d="M19,1 Q21,0,23,1 L39,10 Q41.5,11,42,14 L42,36 Q41.5,39,39,40 L23,49 Q21,50,19,49 L3,40 Q0.5,39,0,36 L0,14 Q0.5,11,3,10 L19,1">
-                    </path>
-                    <circle cx="21" cy="25" r="8"></circle>
-                    <circle cx="21" cy="25" r="12">
-                    </circle>
-                </svg>
-            </span>
+        <!-- sidebar for page -->
+        <div class="sidebar">
+            <div class="dashboardmenuitem">
+                <img src="/icons/view-dashboard.svg" alt="dashboard" />
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="menuitem">
+                <img src="/icons/home.svg" alt="home" />
+                <h2>Home</h2>
+            </div>
+
+            <div class="profile">
+                <img src="/icons/account-card.svg" alt="profile" />
+                <h2>Profile</h2>
+            </div>
+
+            <div class="messages">
+                <img src="/icons/message-outline.svg" alt="messages" />
+                <h2>Messages</h2>
+            </div>
+
+            <div class="history">
+                <img src="/icons/clock-outline.svg" alt="history" />
+                <h2>History</h2>
+            </div>
+
+            <div class="tasks">
+                <img src="/icons/note-multiple-outline.svg" alt="tasks" />
+                <h2>Tasks</h2>
+            </div>
+
+            <div class="communities">
+                <img src="/icons/account-group.svg" alt="communities" />
+                <h2>Communities</h2>
+            </div>
+
+            <div class="settings">
+                <img src="/icons/cog.svg" alt="settings" />
+                <h2>Settings</h2>
+            </div>
+
+            <div class="support">
+                <img src="/icons/help-circle.svg" alt="support" />
+                <h2>Support</h2>
+            </div>
+
+            <div class="privacy">
+                <img src="/icons/shield-check-outline.svg" alt="privacy" />
+                <h2>Privacy</h2>
+            </div>
         </div>
-        <div id="welcome">
-            <h2>The Odin Project</h2>
+
+        <!-- header at top of the page -->
+
+        <div class="header">
+
+            <form action="/" method="GET" class="form">
+                <img src="/icons/magnify.svg" />
+                <input type="text" placeholder="Search" name="search" class="search-field" />
+                <img src="icons/weather-night.svg" alt="moon" />
+                <img src="/icons/white-balance-sunny.svg" alt="sun" />
+
+            </form>
+            <div id="welcome">
+                <img src="https://www.theodinproject.com/favicon-32x32.png" alt="odin" />
+                <h2>The Odin Project</h2>
+                <div id="actions">
+                    <a href="#">New</a>
+                    <a href="#">Upload</a>
+                    <a href="#">Share</a>
+                </div>
+            </div>
         </div>
-        <div id="actions">
-            <button id="new">New</button>
-            <button id="upload">Upload</button>
-            <button id="share">Share</button>
-        </div>
-    </div>
-    <div id="section">
+        <!-- portfolio projects, also main section of page -->
         <div class="projects">
             <h3>My Projects</h3>
             <div>
@@ -101,7 +125,30 @@
                         src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg">
                 </article>
             </div>
+
         </div>
+
+        <!-- sidebar on right side -->
+        <div id="right-hand sidebar">
+            <div class="announcements">Announcements
+                <h3>Site Maintanence</h3>
+                <p>stuff here</p>
+                <h3>Community Share Day</h3>
+                <p>stuff here</p>
+                <h3>Updated Privacy Policy</h3>
+                <p>stuff here</p>
+            </div>
+            <div class="trending">
+                <h3>Trending</h3>
+                <p>link here</p>
+                <p>link here</p>
+                <p>link here</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer">
         <footer>Created by Jonathan Waddell for The Odin Project</footer>
     </div>
     <script src="index.js">

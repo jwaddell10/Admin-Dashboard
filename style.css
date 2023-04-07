@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1.2fr 1fr;
-    grid-template-rows: 15% 25% 25% 25%;
+    grid-template-rows: 15% 30% 30% 25%;
 }
 
 
@@ -28,12 +28,12 @@
     grid-template-rows: repeat(3, 33.33%);
     grid-column: 2 / span 2;
     grid-row: 2 / span 3;
+    background-color: gray;
 }
 
 .projects div {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 1.5rem;
 }
 
 #welcome {
@@ -44,9 +44,23 @@
     display: grid;
 }
 
+
+/* img for projects */
 img {
     height: auto;
     width: 50px;
+}
+
+#right-hand-sidebar,
+.announcements,
+.trending {
+    grid-column: 4;
+    grid-row: 2 / span 3;
+    background-color: aqua;
+}
+
+footer {
+    background-color: bisque;
 }
 
 /*search bar at top of screen */
